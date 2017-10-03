@@ -138,4 +138,14 @@ c.prototype.getPaths=function(a){g(this,a)};c.prototype.setStatus=function(a,b){
 	
 (function(){jQuery.fn.jplist.controls.DropdownFilterDTO=function(e,g){return{path:e,type:g,filterType:"path"}}})();
 
+/*jplist panel*/
+	$(document).ready(function(){
+			$("#mkt-gallery").jplist({
+                itemsMGbox: '.list'
+                ,itemPath: '.list-item'
+                ,panelPath: '.jplist-panel'
 
+                ,storage: 'localstorage'
+                ,storageName: 'mixed-controls-local-storage'
+            });
+     });
